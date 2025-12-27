@@ -1,0 +1,11 @@
+services:
+  langchain-agent:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: titanic-agent
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data 
+    tty: true
