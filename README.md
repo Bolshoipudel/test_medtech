@@ -10,6 +10,22 @@ LLM-агент на базе LangChain для анализа данных Titani
   - `get_dataset_summary` - детальная статистика по датасету
   - `get_survival_statistics` - анализ выживаемости пассажиров
 
+## Структура проекта
+
+```
+langchain-agent/
+├── agent.py              # класс TitanicAgent с pandas dataframe агентом
+├── tools.py              # custom tools 
+├── data_loader.py        # Загрузка Titanic dataset
+├── examples.py           # демо-скрипт с шестью примерами запросов
+├── requirements.txt     
+├── Dockerfile            
+├── docker-compose.yml    
+├── .env.example       
+├── .dockerignore        
+└── data/                 # Директория с результатами работы агента (results.txt)
+```
+
 ## Быстрый старт
 
 ### 1. Настройка API ключа
